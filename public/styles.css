@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Valorant";
+  src: url("ValorantFont.ttf");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  font-family: monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-menu {
+  background-color: transparent;
+  font-family: "Valorant";
+  text-transform: c;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+}
+
+.text {
+  width: 50%;
+}
+
+.content-container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: none;
+  margin-top: 5vw;
+}
+
+.content-container:hover {
+  background-color: #ddd;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

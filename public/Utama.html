@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Agents</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    style="
+      background-image: url(Loading_Screen_Ascent.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <div class="navbar">
+      <span style="font-family: Valorant"> Valorant </span>
+      <div class="menu">
+        <a onclick="" class="button-menu">Dashboard</a>
+        <a a href="#" onclick="tampilmenu(event, 'duelist')" class="button-menu"
+          >Duelist</a
+        >
+        <a onclick="" class="button-menu">Controllers</a>
+        <a onclick="" class="button-menu">Initiators</a>
+        <a onclick="" class="button-menu">Sentinels</a>
+      </div>
+    </div>
+    <div id="container">
+      <div id="duelist" class="content text" style="margin-top: 206px">
+        <div>
+          <span>DUELIST</span>
+          <p>
+            "Duelists are self-sufficient fraggers who their team expects,
+            through abilities and skills, to get high frags and seek out
+            engagements first."
+            <br />
+            — Official Duelist Description
+            <br />
+            Duelists are one of the four roles that agents are divided into in
+            VALORANT. Agents under this role have abilities that allow them to
+            focus on being the first to enter sites and engage the enemy. Unlike
+            other Agent classes, the Signature abilities for Duelists need to be
+            recharged with 2 kills rather than a period of time. The game
+            currently has seven Duelist agents in its roster.
+          </p>
+        </div>
+      </div>
+      <div id="controllers" class="content text" style="margin-top: 206px">
+        <div>
+          <span>Controllers</span>
+          <p>
+            "Duelists are self-sufficient fraggers who their team expects,
+            through abilities and skills, to get high frags and seek out
+            engagements first."
+            <br />
+            — Official Duelist Description
+            <br />
+            Duelists are one of the four roles that agents are divided into in
+            VALORANT. Agents under this role have abilities that allow them to
+            focus on being the first to enter sites and engage the enemy. Unlike
+            other Agent classes, the Signature abilities for Duelists need to be
+            recharged with 2 kills rather than a period of time. The game
+            currently has seven Duelist agents in its roster.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function tampilmenu(event, role) {
+        var content = document.querySelectorAll(".content");
+        content.forEach((element) => {
+          element.style.display = role.classList.contains(role)
+            ? "flex"
+            : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

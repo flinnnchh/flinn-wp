@@ -1,0 +1,218 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="styles.css" />
+
+<body class="w3-grey" background="wallpaper.png" style="background-size: cover">
+  <div class="w3-bar-item w3-black w3-card-4" style="font-family: Valorant">
+    <div class="navbar">
+      <div style="text-align: center; margin-left: 10px">
+        <img width="64px" src="logovalo.png" style="margin: 10px" />
+        VALORANT
+      </div>
+      <p></p>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 30px;
+        "
+      >
+        <button class="w3-button w3-bar-item" onclick="openKota('Home')">
+          Home
+        </button>
+        <button class="w3-button w3-bar-item" onclick="openKota('Duelist')">
+          Duelist
+        </button>
+        <button class="w3-button w3-bar-item" onclick="openKota('Controllers')">
+          Controllers
+        </button>
+        <button class="w3-button w3-bar-item" onclick="openKota('Sentinels')">
+          Sentinels
+        </button>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">ABOUT</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openKota('Profile')">
+              Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Home" class="w3-container kota" style="display: block">
+    <div
+      class="content-container"
+      style="flex-direction: column; margin-bottom: 20px"
+    >
+      <img src="valo.png" width="300px" />
+      <div class="w3-container">
+        <p style="max-width: 700px; text-align: left; word-wrap: break-word">
+          Valorant is a free-to-play first-person tactical hero shooter
+          developed and published by Riot Games, for Windows.[3] Teased under
+          the codename Project A in October 2019, the game began a closed beta
+          period with limited access on April 7, 2020, followed by a release on
+          June 2, 2020. The development of the game started in 2014. Valorant
+          takes inspiration from the Counter-Strike series, borrowing several
+          mechanics such as the buy menu, spray patterns, and inaccuracy while
+          moving.
+        </p>
+        <p>
+          Valorant is a team-based first-person tactical hero shooter set in the
+          near future.[4][5][6][7] Players play as one of a set of Agents,
+          characters based on several countries and cultures around the
+          world.[7] In the main game mode, players are assigned to either the
+          attacking or defending team with each team having five players on it.
+          Agents have unique abilities, each requiring charges, as well as a
+          unique ultimate ability that requires charging through kills, deaths,
+          orbs, or objectives. Every player starts each round with a "classic"
+          pistol and one or more "signature ability" charges.[5] Other weapons
+          and ability charges can be purchased using an in-game economic system
+          that awards money based on the outcome of the previous round, any
+          kills the player is responsible for, and any objectives completed. The
+          game has an assortment of weapons including secondary guns like
+          sidearms and primary guns like submachine guns, shotguns, machine
+          guns, assault rifles and sniper rifles.[8][9] There are automatic and
+          semi-automatic weapons that each have a unique shooting pattern that
+          has to be controlled by the player to be able to shoot accurately.[9]
+          It currently offers 23 agents to choose from.[3][10][11] The player
+          will get 5 unlocked agents when they create their account, and will
+          have to unlock the rest of the agents by collecting an in-game
+          currency called Kingdom Credits. Kingdom Credits can be acquired by
+          playing games or completing daily and weekly tasks, and can be spent
+          on unlocking new agents or cosmetic items. However, within the first
+          28 days of release, new Agents can only be unlocked with Valorant
+          Points (VP), Agent Recruitment Events, or by having a linked and
+          active Xbox Game Pass subscription. VP is an in-game currency that can
+          only obtained by purchasing it with real money,[12][better source
+          needed] and it can be spent on cosmetic items or new agents.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="Duelist" class="w3-container kota" style="display: none">
+    <div class="content-container">
+      <div style="display: flex; flex-direction: column">
+        <h2 style="font-family: Valorant">DUELIST</h2>
+        <p style="text-indent: 20px">
+          Duelists are self-sufficient fraggers who their team expects, through
+          abilities and skills, to get high frags and seek out engagements
+          first. — Official Duelist Description
+          <br />
+          Duelists are one of the four roles that agents are divided into in
+          VALORANT. Agents under this role have abilities that allow them to
+          focus on being the first to enter sites and engage the enemy. Unlike
+          other Agent classes, the Signature abilities for Duelists need to be
+          recharged with 2 kills rather than a period of time.
+        </p>
+      </div>
+      <img src="duelist.1.png" width="500px" />
+    </div>
+  </div>
+  <div id="Controllers" class="w3-container kota" style="display: none">
+    <div class="content-container">
+      <div style="display: flex; flex-direction: column">
+        <h2 style="font-family: Valorant">Controllers</h2>
+        <p style="text-indent: 20px">
+          Controllers are experts in slicing up dangerous territory to set their
+          team up for success. — Official Controller Description Controllers are
+          one of the four roles that agents are divided into in VALORANT.
+          <br />
+          The abilities of agents under this role allow them to assist their
+          teammates by cutting enemy vision, taking control of an area, and
+          forcing enemies into choke points.
+        </p>
+      </div>
+      <img src="smokers.png" width="500px" />
+    </div>
+  </div>
+  <div id="Sentinels" class="w3-container kota" style="display: none">
+    <div class="content-container">
+      <div style="display: flex; flex-direction: column">
+        <h2 style="font-family: Valorant">Sentinels</h2>
+        <p style="text-indent: 20px">
+          Sentinels are defensive experts who can lock down areas and watch
+          flanks, both on attacker and defender rounds. — Official Sentinel
+          Description
+          <br />
+          Sentinels are one of the four roles that agents are divided into in
+          VALORANT. The abilities of agents under this role focus on defensive
+          play, with emphasis on supporting the rest of the team through
+          providing intel, anchoring down sites, and preventing the enemy from
+          flanking.
+        </p>
+      </div>
+      <img src="sentinels.png" width="500px" />
+    </div>
+  </div>
+  <div
+    id="Profile"
+    class="w3-container kota w3-animate-top"
+    style="display: none"
+  >
+    <div class="content-container">
+      <div style="display: flex; flex-direction: column">
+        <h2 style="font-family: Valorant">PROFILE</h2>
+        <table style="text-indent: 20px">
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Eflin Christian Hutapea</td>
+          </tr>
+          <tr>
+            <td>Hobby</td>
+            <td>:</td>
+            <td>Main dan berolahraga</td>
+          </tr>
+          <tr>
+            <td>Cita - cita</td>
+            <td>:</td>
+            <td>Orang sukses</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>:</td>
+            <td>@flinnnchh</td>
+          </tr>
+        </table>
+      </div>
+      <img src="diriku.png" width="250px" />
+    </div>
+  </div>
+</body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA65_z1cU9dZt6iKIyKiCSFqLxfvT_Ukbo",
+    authDomain: "flinn-db04b.firebaseapp.com",
+    projectId: "flinn-db04b",
+    storageBucket: "flinn-db04b.appspot.com",
+    messagingSenderId: "877486367121",
+    appId: "1:877486367121:web:3b36228853f745ba803a30",
+    measurementId: "G-DM3RGR20WQ",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+<script>
+  function openKota(namaKota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(namaKota).style.display = "block";
+  }
+</script>
